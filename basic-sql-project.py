@@ -12,6 +12,7 @@ def create_database():
     conn = sqlite3.connect("address_book.db")   # veritabanına bağlantı oluşturuyoruz.
     cursor = conn.cursor()  #veritabanı üzerinde işlem yapabilmek için bir "cursor" oluşturmanız gerekmektedir.
 
+    # SQL sorgusunu yürüt:
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS contacts (
                    id INTEGER PRIMARY KEY,
@@ -21,7 +22,7 @@ def create_database():
                    email TEXT
         
         )
-    ''')  ## SQL sorgusunu yürüt
+    ''')  
 
     conn.commit()  # veritabanına değişiklikleri kaydet
     conn.close()   # veritabanı bağlantısını kapat
