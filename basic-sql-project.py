@@ -88,7 +88,7 @@ def delete_contact():
 
     conn.close()
 
-# kullanıcıfan bir seçenek seçmesini ve işlem yapmasını isteyen döngü
+# kullanıcıdan bir seçenek seçmesini ve işlem yapmasını isteyen döngü
 
 def main():
     create_database()
