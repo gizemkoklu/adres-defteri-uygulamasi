@@ -49,7 +49,7 @@ def add_contact():
     conn.close()
     print("Kişi eklendi.")
 
-# mevcut kişileri listelemesi için bir fonksiyon yazalımÇ
+# mevcut kişileri listelemesi için bir fonksiyon yazalım:
 
 def list_contacts():
     conn = sqlite3.connect("address_book.db")
@@ -89,7 +89,7 @@ def delete_contact():
 
     conn.close()
 
-# kullanıcıdan bir seçenek seçmesini ve işlem yapmasını isteyen döngü
+# kullanıcıdan bir seçenek seçmesini ve işlem yapmasını isteyen döngü:
 
 def main():
     create_database()
